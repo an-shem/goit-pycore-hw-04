@@ -14,7 +14,7 @@ def total_salary(path):
 
 
 def main():
-    total, average = total_salary("src/list_employee_salarie3s.txt")
+    total, average = total_salary("src/list_employee_salaries.txt")
     print(
         f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}"
     )
