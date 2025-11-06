@@ -29,7 +29,7 @@ def main():
     colorama_init(autoreset=True)
     if len(sys.argv) <= 1:
         print(Fore.RED + "You haven't specified a directory.")
-        return
+        return 1
     p = Path(sys.argv[1])
     if not p.exists():
         print(Fore.RED + "The specified directory does not exist.")
@@ -38,7 +38,7 @@ def main():
         print(Fore.RED + "You specified the path to the file, not the directory.")
         return 1
     folder_and_file_structure_output(p)
-    return
+    return 0
 
 
 if __name__ == "__main__":
